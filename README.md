@@ -7,7 +7,7 @@ Screenshot:
 ![image alt](https://github.com/yashsingh2003/Book-Recommendation-Bot/blob/main/Book-Recommendation-Bot.png)
 
 🚀 Live Demo
-🔗 [Here is your demo link]
+🔗 [Here is your demo link](https://yashsingh2003.github.io/Book-Recommendation-Bot/)
 Example: https://yourusername.github.io/book-recommendation-chatbot
 
 💡 Features
