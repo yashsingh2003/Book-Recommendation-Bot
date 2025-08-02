@@ -3,7 +3,8 @@
 A simple chatbot built with IBM Watson Assistant that provides personalized book recommendations based on user input. Users can ask for books by genre, topic, or general interest, and the chatbot responds with suggestions accordingly.
 
 Screenshot:
-![image alt]https://github.com/yashsingh2003/Book-Recommendation-Bot/blob/main/Book-Recommendation-Bot.png
+
+![image alt](https://github.com/yashsingh2003/Book-Recommendation-Bot/blob/main/Book-Recommendation-Bot.png)
 
 🚀 Live Demo
 🔗 [Here is your demo link]
