@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Recommendation Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e8f0ff);
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      max-width: 650px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card h2 {
+      color: #4a4a4a;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .examples ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .examples li {
+      background-color: #e3f0ff;
+      padding: 12px 18px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      color: #333;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 25px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Book Recommendation Bot</h1>
+    <p>Your AI reading buddy – just ask and discover!</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>What can I do?</h2>
+      <p>Tell the bot what kind of books you like, and it will recommend one just for you!</p>
+      
+      <div class="examples">
+        <ul>
+          <li>💬 "Recommend me a thriller book"</li>
+          <li>📖 "Suggest a romantic novel"</li>
+          
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Made with ❤️ using IBM Watson Assistant – 2025
+  </footer>
+
+  <!-- IBM Watson Assistant Integration Script -->
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "c900e33e-989c-4228-ab95-55c11a891dc8", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "edf9ebff-f2a5-42aa-a04a-c87591135ccd", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
